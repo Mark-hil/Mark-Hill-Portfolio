@@ -29,7 +29,7 @@ A personal portfolio website showcasing my skills, experience, and projects in D
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/[your-username]/[repository-name].git
+git clone https://github.com/Mark-hil/Mark-Hill-Portfolio.git
 cd [repository-name]
 ```
 
@@ -57,7 +57,7 @@ The built files will be in the `dist` directory.
 
 This site is automatically deployed to GitHub Pages when changes are pushed to the main branch. The deployment process is handled by GitHub Actions.
 
-View the live site at: https://[your-github-username].github.io/[repository-name]
+View the live site at: https://Mark-hil.github.io/Mark-Hill-Portfolio
 
 ## 📜 Available Scripts
 
