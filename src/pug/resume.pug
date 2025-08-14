@@ -1,0 +1,355 @@
+doctype html
+html(lang='en')
+
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+        title Ampomah Mark-Hill - Resume
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+        include includes/css.pug
+
+    body.d-flex.flex-column.h-100.bg-light
+
+        main.flex-shrink-0
+
+            include includes/navbar.pug
+
+            .container.px-5.my-5
+                .text-center.mb-5
+                    h1.display-5.fw-bolder.mb-0
+                        span.text-gradient.d-inline Resume
+
+                // Professional Summary
+                .row.gx-5.justify-content-center
+                    .col-lg-11.col-xl-9.col-xxl-8
+                        section.mb-5
+                            h2.text-primary.fw-bolder.mb-3 Professional Summary
+                            .card.shadow.border-0.rounded-4.mb-4
+                                .card-body.p-4
+                                    p.text-justify Detail-oriented and technically proficient analyst with a strong foundation in AWS Cloud infrastructure, programming, and cybersecurity. Motivated to transition from a GRC and audit-focused role to a hands-on position in infrastructure engineering. Holds AWS Certified Solutions Architect - Associate and AWS Certified Cloud Practitioner certifications with a proven ability to automate infrastructure using Terraform and build CI/CD pipelines with GitHub Actions. Eager to leverage a background in secure systems design, monitoring, and compliance to learn and contribute to building scalable and secure cloud infrastructure.
+
+                        // Skills & Competencies
+                        section.mb-5
+                            h2.text-secondary.fw-bolder.mb-3 Skills & Competencies
+
+                            // Cloud & Infrastructure
+                            .card.shadow.border-0.rounded-4.mb-4
+                                .card-body.p-4
+                                    .row.align-items-center.gx-5
+                                        .col.text-center.text-lg-start.mb-4.mb-lg-0
+                                            .bg-light.p-3.rounded-4
+                                                .text-primary.fw-bolder.mb-2 Cloud & Infrastructure
+                                        .col-lg-8
+                                            ul
+                                                li AWS Cloud, AWS Services
+                                                li Network Security, Data Communication
+                                                li Computer Networking
+
+                            // GRC & Cybersecurity
+                            .card.shadow.border-0.rounded-4.mb-4
+                                .card-body.p-4
+                                    .row.align-items-center.gx-5
+                                        .col.text-center.text-lg-start.mb-4.mb-lg-0
+                                            .bg-light.p-3.rounded-4
+                                                .text-primary.fw-bolder.mb-2 GRC & Cybersecurity
+                                        .col-lg-8
+                                            ul
+                                                li NIST Cybersecurity Framework, ISO 27001, COBIT
+                                                li Risk Assessment, Security Policy Compliance
+                                                li Audit Readiness, Incident Response Support
+                                                li Data Privacy & Protection
+                                                li Regulatory Compliance (GDPR, HIPAA)
+
+                            // Programming & Development
+                            .card.shadow.border-0.rounded-4.mb-4
+                                .card-body.p-4
+                                    .row.align-items-center.gx-5
+                                        .col.text-center.text-lg-start.mb-4.mb-lg-0
+                                            .bg-light.p-3.rounded-4
+                                                .text-primary.fw-bolder.mb-2 Programming & Development
+                                        .col-lg-8
+                                            ul
+                                                li Python, C++, Visual Basic .NET, HTML, CSS
+                                                li Software Engineering
+                                                li Data Structures & Algorithms
+                                                li Database Management
+
+                            // Machine Learning & AI
+                            .card.shadow.border-0.rounded-4.mb-4
+                                .card-body.p-4
+                                    .row.align-items-center.gx-5
+                                        .col.text-center.text-lg-start.mb-4.mb-lg-0
+                                            .bg-light.p-3.rounded-4
+                                                .text-primary.fw-bolder.mb-2 Machine Learning & AI
+                                        .col-lg-8
+                                            ul
+                                                li Scikit-learn, TensorFlow, Keras
+                                                li OpenCV, MediaPipe
+                                                li Chatbot Development
+                                                li Text Classification & Predictive Modeling
+
+                            // Tools & Technical Skills
+                            .card.shadow.border-0.rounded-4.mb-4
+                                .card-body.p-4
+                                    .row.align-items-center.gx-5
+                                        .col.text-center.text-lg-start.mb-4.mb-lg-0
+                                            .bg-light.p-3.rounded-4
+                                                .text-primary.fw-bolder.mb-2 Tools & Technical Skills
+                                        .col-lg-8
+                                            ul
+                                                li Microsoft Office Suite, Visual Studio
+                                                li Git & GitHub, SPSS
+                                                li SQL Basics
+                                                li Debugging & Troubleshooting
+
+                            // Soft Skills & Strengths
+                            .card.shadow.border-0.rounded-4.mb-4
+                                .card-body.p-4
+                                    .row.align-items-center.gx-5
+                                        .col.text-center.text-lg-start.mb-4.mb-lg-0
+                                            .bg-light.p-3.rounded-4
+                                                .text-primary.fw-bolder.mb-2 Soft Skills & Strengths
+                                        .col-lg-8
+                                            ul
+                                                li Problem Solving & Analytical Thinking
+                                                li Team Collaboration
+                                                li Attention to Detail
+                                                li Strong Communication Skills
+
+                        // Experience Section
+                        section.mb-5
+                            h2.text-primary.fw-bolder.mb-3 Professional Experience
+
+                            // AmaliTech
+                            .card.shadow.border-0.rounded-4.mb-4
+                                .card-body.p-4
+                                    .row.align-items-center.gx-5
+                                        .col.text-center.text-lg-start.mb-4.mb-lg-0
+                                            .bg-light.p-3.rounded-4
+                                                .text-primary.fw-bolder.mb-2 Oct 2024 – Present
+                                                .small.fw-bolder DevOps Engineer
+                                                .small.text-muted AmaliTech
+                                        .col-lg-8
+                                            ul
+                                                li Practiced DevOps methodologies and principles to streamline software development and deployment.
+                                                li Automated CI/CD pipelines and maintained workflows for rapid and safe code deployment.
+                                                li Used Infrastructure as Code (IaC) to provision and manage AWS cloud resources.
+                                                li Assisted in troubleshooting and monitoring system health, resolving infrastructure issues.
+                                                li Collaborated with development teams to support infrastructure needs and improve efficiency.
+
+                            // Infosec Consulting International
+                            .card.shadow.border-0.rounded-4.mb-4
+                                .card-body.p-4
+                                    .row.align-items-center.gx-5
+                                        .col.text-center.text-lg-start.mb-4.mb-lg-0
+                                            .bg-light.p-3.rounded-4
+                                                .text-primary.fw-bolder.mb-2 Oct 2022 – 2023
+                                                .small.fw-bolder IT Audit & Compliance Security Analyst (Remote, contract)
+                                                .small.text-muted Infosec Consulting International
+                                        .col-lg-8
+                                            ul
+                                                li Performed end-to-end IT audits of infrastructure, applications, and cloud environments.
+                                                li Led compliance assessments against SOX, ISO 27001, and NIST CSF.
+                                                li Developed and executed control testing procedures for ITGCs, access and change management.
+                                                li Collaborated with InfoSec and IT Operations to implement corrective actions and strengthen controls.
+
+                            // PwC
+                            .card.shadow.border-0.rounded-4.mb-4
+                                .card-body.p-4
+                                    .row.align-items-center.gx-5
+                                        .col.text-center.text-lg-start.mb-4.mb-lg-0
+                                            .bg-light.p-3.rounded-4
+                                                .text-primary.fw-bolder.mb-2 Sep 2019 – Jun 2022
+                                                .small.fw-bolder Risk & Cybersecurity Analyst
+                                                .small.text-muted PwC
+                                        .col-lg-8
+                                            ul
+                                                li Conducted enterprise-wide risk assessments to identify and prioritize cybersecurity threats.
+                                                li Maintained cybersecurity risk register, aligning risks with NIST CSF and ISO 27001.
+                                                li Collaborated with IT, DevOps, and compliance teams to design and implement risk mitigation strategies.
+                                                li Supported vulnerability scans and penetration testing, reviewing results and ensuring remediation.
+
+                        // Education Section
+                        section.mb-5
+                            h2.text-secondary.fw-bolder.mb-3 Education
+                            .card.shadow.border-0.rounded-4.mb-4
+                                .card-body.p-4
+                                    .row.align-items-center.gx-5
+                                        .col.text-center.text-lg-start.mb-4.mb-lg-0
+                                            .bg-light.p-3.rounded-4
+                                                .text-secondary.fw-bolder.mb-2 Jan 2020 – Nov 2024
+                                                .small.fw-bolder BSc. Information Technology
+                                                .small.text-muted University of Energy and Natural Resources (UENR), Sunyani
+                                        .col-lg-8
+                                            ul
+                                                li Principles of Programming, Data Communication & Computer Networking
+                                                li Data Structures & Algorithms, Software Engineering
+                                                li Programming with Visual Basic (.NET), Database Management
+                                                li Python Programming, C++ Programming
+
+                        // Certifications Section
+                        section.mb-5
+                            h2.text-primary.fw-bolder.mb-3 Certifications
+
+                            // AWS Solutions Architect
+                            .card.shadow.border-0.rounded-4.mb-4
+                                .card-body.p-4
+                                    .row.align-items-center.gx-5
+                                        .col.text-center.text-lg-start.mb-4.mb-lg-0
+                                            .bg-light.p-3.rounded-4
+                                                .text-primary.fw-bolder.mb-2 AWS Certified Solutions Architect - Associate
+                                                .small.fw-bolder Amazon Web Services (AWS)
+                                        .col-lg-8
+                                            p.mb-2.fw-bold Key Topics:
+                                            ul
+                                                li Design High-Performing Architectures
+                                                li Design Secure Applications and Architectures
+                                                li Design Resilient Architectures
+                                                li Design Cost-Optimized Architectures
+                                                li Define Operationally Excellent Architectures
+
+                            // AWS Cloud Practitioner
+                            .card.shadow.border-0.rounded-4.mb-4
+                                .card-body.p-4
+                                    .row.align-items-center.gx-5
+                                        .col.text-center.text-lg-start.mb-4.mb-lg-0
+                                            .bg-light.p-3.rounded-4
+                                                .text-primary.fw-bolder.mb-2 AWS Certified Cloud Practitioner
+                                                .small.fw-bolder Amazon Web Services (AWS)
+                                        .col-lg-8
+                                            p.mb-2.fw-bold Key Topics:
+                                            ul
+                                                li Cloud concepts
+                                                li AWS services
+                                                li Cloud deployment and management
+                                                li Cloud security
+
+
+                            // Cybersecurity GRC
+                            .card.shadow.border-0.rounded-4.mb-4
+                                .card-body.p-4
+                                    .row.align-items-center.gx-5
+                                        .col.text-center.text-lg-start.mb-4.mb-lg-0
+                                            .bg-light.p-3.rounded-4
+                                                .text-primary.fw-bolder.mb-2 Cybersecurity GRC- IT Audit
+                                                .small.fw-bolder Yesyoucan Cybersecure LLC
+                                                .small.text-muted Dallas, USA
+                                        .col-lg-8
+                                            p.mb-2.fw-bold Key Topics:
+                                            ul
+                                                li IT Governance
+                                                li Risk Management
+                                                li Compliance Frameworks
+                                                li Audit Methodologies
+                                                li Risk Assessment
+                                                li Compliance Auditing
+
+                            // Ethical Hacking
+                            .card.shadow.border-0.rounded-4.mb-4
+                                .card-body.p-4
+                                    .row.align-items-center.gx-5
+                                        .col.text-center.text-lg-start.mb-4.mb-lg-0
+                                            .bg-light.p-3.rounded-4
+                                                .text-primary.fw-bolder.mb-2 Ethical Hacking Basics
+                                                .small.fw-bolder Alison Education
+                                        .col-lg-8
+                                            p.mb-2.fw-bold Key Topics:
+                                            ul
+                                                li Basic Networking
+                                                li Data Communication
+                                                li TCP/IP
+                                                li Ethical Hacking Concepts
+
+
+                            // Essential Networking
+                            .card.shadow.border-0.rounded-4.mb-4
+                                .card-body.p-4
+                                    .row.align-items-center.gx-5
+                                        .col.text-center.text-lg-start.mb-4.mb-lg-0
+                                            .bg-light.p-3.rounded-4
+                                                .text-primary.fw-bolder.mb-2 Essential Networking
+                                                .small.fw-bolder Cisco Networking Academy
+                                        .col-lg-8
+                                            p.mb-2.fw-bold Key Topics:
+                                            ul
+                                                li IPv4/IPv6 Fundamentals
+                                                li TCP/OSI Model
+                                                li Network Security
+
+
+                            // Python Programming
+                            .card.shadow.border-0.rounded-4.mb-4
+                                .card-body.p-4
+                                    .row.align-items-center.gx-5
+                                        .col.text-center.text-lg-start.mb-4.mb-lg-0
+                                            .bg-light.p-3.rounded-4
+                                                .text-primary.fw-bolder.mb-2 Diploma in Python Programming
+                                                .small.fw-bolder Alison Education
+                                        .col-lg-8
+                                            p.mb-2.fw-bold Key Topics:
+                                            ul
+                                                li Python Data Types
+                                                li Functions
+                                                li Date & Time Handling
+                                                li Decision Making
+                                                li Error Handling
+                                                li Data Visualization
+                                                li Web Scraping
+
+                            // OSH Manager
+                            .card.shadow.border-0.rounded-4.mb-4
+                                .card-body.p-4
+                                    .row.align-items-center.gx-5
+                                        .col.text-center.text-lg-start.mb-4.mb-lg-0
+                                            .bg-light.p-3.rounded-4
+                                                .text-primary.fw-bolder.mb-2 Occupational Safety and Health Manager
+                                                .small.fw-bolder OSH Academy
+                                        .col-lg-8
+                                            p.mb-2.fw-bold Key Topics:
+                                            ul
+                                                li Safety Supervision & Leadership
+                                                li Fire Prevention Plan
+                                                li Emergency Response Planning
+                                                li Incident Investigation & Reporting
+                                                li Safety Auditing
+                                                li Risk Assessment
+
+
+                        // Projects Section
+                        section.mb-5
+                            h2.text-secondary.fw-bolder.mb-3 Projects
+
+                            .card.shadow.border-0.rounded-4.mb-4
+                                .card-body.p-4
+                                    h5.fw-bold.mb-2 DevOps Infrastructure Automation Project
+                                    ul
+                                        li Developed and deployed automated, secure AWS cloud infrastructure using Terraform.
+                                        li Created Terraform modules for EC2, ECS, S3, and VPC networking.
+                                        li Implemented CI/CD pipeline with GitHub Actions and Jenkins for automated deployment.
+                                        li Configured IAM roles with least-privilege principles for secure access.
+
+                            .card.shadow.border-0.rounded-4.mb-4
+                                .card-body.p-4
+                                    h5.fw-bold.mb-2 University Chatbot Project
+                                    ul
+                                        li Developed an intelligent chatbot for student FAQs using Python Django.
+                                        li Utilized NLP techniques and APIs for accurate responses.
+                                        li Continuously tested and improved chatbot based on user feedback.
+
+                            .card.shadow.border-0.rounded-4.mb-4
+                                .card-body.p-4
+                                    h5.fw-bold.mb-2 Breast Cancer Detection (One-Class Classification)
+                                    ul
+                                        li Developed a machine learning model for image classification using TensorFlow and Keras.
+                                        li Preprocessed data and implemented models in Python.
+
+                        // Download Resume Button
+                        .text-center.mt-4
+                            a.btn.btn-primary.px-4.py-3(href='assets/AMPOMAH MARK-HILL-cv.pdf', target='_blank')
+                                .d-inline-block.bi.bi-download.me-2
+                                | Download PDF Resume
+
+        include includes/footer.pug
+        include includes/scripts.pug

@@ -1,0 +1,94 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content)
+        meta(name='author', content)
+
+        title Contact Mark-Hill
+
+        // Favicon
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+
+        include includes/css.pug
+
+    body.d-flex.flex-column
+
+        main.flex-shrink-0
+
+            // Navigation
+            include includes/navbar.pug
+
+            // Page content
+            section.py-5
+
+                .container.px-5
+
+                    // Contact form
+                    .bg-light.rounded-4.py-5.px-4.px-md-5
+                        .text-center.mb-5
+                            .feature.bg-primary.bg-gradient-primary-to-secondary.text-white.rounded-3.mb-3
+                                i.bi.bi-envelope
+                            h1.fw-bolder Get in touch
+                            p.lead.fw-normal.text-muted.mb-0 Let's work together!
+                        .row.gx-5.justify-content-center
+                            .col-lg-8.col-xl-6
+
+                                form(
+                                    action='https://formsubmit.co/markhill6072@gmail.com'
+                                    method='POST'
+                                )
+                                    input(type='hidden' name='_next' value='https://your-website.com/thanks.html')
+                                    input(type='hidden' name='_subject' value='New Portfolio Contact!')
+                                    
+                                    // Name input
+                                    .form-floating.mb-3
+                                        input#name.form-control(
+                                            type='text'
+                                            name='name'
+                                            placeholder='Enter your name...'
+                                            required
+                                        )
+                                        label(for='name') Full name
+
+                                    // Email address input
+                                    .form-floating.mb-3
+                                        input#email.form-control(
+                                            type='email'
+                                            name='email'
+                                            placeholder='name@example.com'
+                                            required
+                                        )
+                                        label(for='email') Email address
+
+                                    // Phone number input
+                                    .form-floating.mb-3
+                                        input#phone.form-control(
+                                            type='tel'
+                                            name='phone'
+                                            placeholder='(123) 456-7890'
+                                            required
+                                        )
+                                        label(for='phone') Phone number
+
+                                    // Message input
+                                    .form-floating.mb-3
+                                        textarea#message.form-control(
+                                            name='message'
+                                            placeholder='Enter your message here...'
+                                            style='height: 10rem;'
+                                            required
+                                        )
+                                        label(for='message') Message
+
+                                    // Submit Button
+                                    .d-grid
+                                        button.btn.btn-primary.btn-lg(type='submit') Submit
+
+        // Footer
+        include includes/footer.pug
+
+        include includes/scripts.pug

@@ -1,0 +1,126 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title Modern Project
+
+        // Favicon
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+
+        include includes/css.pug
+
+    body.d-flex.flex-column.h-100.bg-light
+
+        main.flex-shrink-0
+
+            // Navigation
+            include includes/navbar.pug
+
+            // Projects Section
+            section.py-5
+                .container.px-5.mb-5
+                    .text-center.mb-5
+                        h1.display-5.fw-bolder.mb-0
+                            span.text-gradient.d-inline Projects
+                    .row.gx-5.justify-content-center
+
+                        .col-lg-11.col-xl-9.col-xxl-8
+
+                            // DevOps Infrastructure Project
+                            .card.overflow-hidden.shadow.rounded-4.border-0.mb-5
+                                .card-body.p-0
+                                    .d-flex.align-items-center
+                                        .p-5.col-lg-8
+                                            h2.fw-bolder DevOps Infrastructure Automation
+                                            p.mb-4 A comprehensive AWS cloud infrastructure automation project using modern DevOps practices and tools.
+                                            ul.mb-0
+                                                li Developed and deployed automated, secure cloud infrastructure on AWS using Terraform
+                                                li Created Terraform modules for EC2, ECS, S3, and VPC networking components
+                                                li Implemented CI/CD pipeline using GitHub Actions and Jenkins
+                                                li Configured IAM roles with least-privilege security principles
+                                        .col-lg-4.px-0
+                                            img.img-fluid.w-100.h-100.object-fit-cover.cursor-pointer(
+                                                src='assets/devops-project.png', 
+                                                alt='DevOps Infrastructure Visualization', 
+                                                style='max-height: 300px; cursor: pointer;',
+                                                data-bs-toggle='modal',
+                                                data-bs-target='#imageModal',
+                                                onclick='showImage(this.src, this.alt)'
+                                            )
+
+                            // University Chatbot Project
+                            .card.overflow-hidden.shadow.rounded-4.border-0.mb-5
+                                .card-body.p-0
+                                    .d-flex.align-items-center
+                                        .p-5.col-lg-8
+                                            h2.fw-bolder University Chatbot
+                                            p.mb-4 An intelligent chatbot system built to assist students with quick responses to frequently asked questions.
+                                            ul.mb-0
+                                                li Developed using Python Django framework
+                                                li Integrated NLP techniques and APIs for accurate responses
+                                                li Implemented continuous improvement based on user feedback
+                                        .col-lg-4.px-0
+                                            img.img-fluid.w-100.h-100.object-fit-cover(src='assets/chatbot-project.jpg', alt='University Chatbot Interface', style='max-height: 300px;')
+
+                            // Breast Cancer Detection Project
+                            .card.overflow-hidden.shadow.rounded-4.border-0
+                                .card-body.p-0
+                                    .d-flex.align-items-center
+                                        .p-5.col-lg-8
+                                            h2.fw-bolder Breast Cancer Detection
+                                            p.mb-4 A machine learning project focusing on breast cancer detection using advanced image classification techniques.
+                                            ul.mb-0
+                                                li Developed ML model for image classification
+                                                li Implemented using TensorFlow and Keras
+                                                li Preprocessed medical imaging data for analysis
+                                        .col-lg-4.px-0
+                                            img.img-fluid.w-100.h-100.object-fit-cover(src='assets/ml-project.jpg', alt='Cancer Detection ML Model', style='max-height: 300px;')
+
+            // Call to action section
+            section.py-5.bg-gradient-primary-to-secondary.text-white
+                .container.px-5.my-5
+                    .text-center
+                        h2.display-4.fw-bolder.mb-4 Let's build something together
+                        a.btn.btn-outline-light.btn-lg.px-5.py-3.fs-6.fw-bolder(href='contact.html') Contact me
+
+        // Footer
+        include includes/footer.pug
+
+        include includes/scripts.pug
+
+        // Image Preview Modal
+        #imageModal.modal.fade(tabindex='-1')
+            .modal-dialog.modal-dialog-centered.modal-xl
+                .modal-content.bg-transparent.border-0
+                    .modal-header.border-0
+                        button.btn-close.btn-close-white(type='button', data-bs-dismiss='modal')
+                    .modal-body.p-0.text-center
+                        img#modalImage.img-fluid.rounded(src='', alt='')
+
+        // Add this script before the closing body tag
+        script.
+            function showImage(src, alt) {
+                document.getElementById('modalImage').src = src;
+                document.getElementById('modalImage').alt = alt;
+            }
+
+        style.
+            .cursor-pointer {
+                cursor: pointer;
+            }
+            .modal-backdrop.show {
+                opacity: 0.9;
+            }
+            .btn-close-white {
+                position: absolute;
+                right: 20px;
+                top: 20px;
+                z-index: 1050;
+                background-color: white;
+            }
